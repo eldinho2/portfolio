@@ -1,0 +1,70 @@
+.welcome__buttons {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  padding-right: 400px;
+}
+
+.button__primary,
+.button__primary:visited,
+.button__primary:active,
+.button__primary:link,
+.button__primary:focus {
+  background-color: transparent;
+  color: #ffffff;
+  overflow: visible;
+  border: 1px solid rgba(238, 232, 255, 0.57);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  display: block;
+}
+.button__primary a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+}
+.button__primary {
+  font-style: inherit;
+font-size: 0.68182rem;
+position: relative;
+z-index: 1;
+display: inline-block;
+box-sizing: border-box;
+padding: 0.85em 2em 0.83em;
+margin: 0.85em 2em 0.83em;
+text-align: center;
+cursor: pointer;
+margin-bottom: 40px;
+text-decoration: none;
+outline: 0;
+overflow: visible;
+border: 1px solid rgba(238, 232, 255, 0.57);
+transition: background-color 0.3s ease, color 0.3s ease;
+text-transform: uppercase;
+font-weight: 400;
+letter-spacing: 2px;
+color: #000;
+display: block;
+}
+.button__primary:before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 21px;
+  bottom: 0;
+  width: 30px;
+  height: 1px;
+  background-color: rgba(238, 232, 255, 0.57);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: -1;
+}
+.button__primary:hover {
+  background-color: #bdbaba;
+  color: #000;
+}
+.button__primary:hover:before {
+  transform: translate3d(20px, 0, 0);
+  opacity: 0;
+}
